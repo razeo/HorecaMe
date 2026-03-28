@@ -1,0 +1,21 @@
+{
+  "extends": "@horecame/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@horecame/ui": ["../../packages/ui/src"],
+      "@horecame/ui/*": ["../../packages/ui/src/*"],
+      "@horecame/db": ["../../packages/db/src"],
+      "@horecame/db/*": ["../../packages/db/src/*"],
+      "@horecame/shared": ["../../packages/shared/src"],
+      "@horecame/shared/*": ["../../packages/shared/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
